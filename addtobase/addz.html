@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+
+    function getXMLHttpRequest()
+    {
+        if (window.XMLHttpRequest) {
+            return new XMLHttpRequest();
+        }
+
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    }
+
+    request = getXMLHttpRequest();
+
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+           // alert(request.responseText);
+       // тут функция после успешного завершения запроса.
+        }
+    };
+function updateFile(obj)
+{
+params = obj.name + '=' + obj.value;
+request.open('POST', 'appenddb.php', true);
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+request.send(params);
+}
+
+
+
+</script>
+<div>Кем ты хочешь быть?(разделять слова символом *)
+<textarea id="textField1" name="text1"></textarea>
+<input onclick="updateFile(document.getElementById('textField1'));" type="button"  value="Добавить в базу"/>
+</div>
+<div >Где ты хочеш жить?(разделять слова символом *)
+    <textarea id="textField2" name="text2"></textarea>
+    <input onclick="updateFile(document.getElementById('textField2'));" type="button"  value="Добавить в базу"/>
+</div>
+<div >желаеш ездить? (не доступно)
+    <textarea id="textField3" name="text3"></textarea>
+    <input onclick="" type="button"  value="Добавить в базу"/>
+</div>
+
+<div >Кем хочеш работать?(не доступно)
+    <textarea id="textField3" name="text4"></textarea>
+    <input onclick="" type="button"  value="Добавить в базу"/>
+</div>
+<div >Как желаеш отдыхать ?(не доступно)
+    <textarea id="textField5" name="text5"></textarea>
+    <input onclick="" type="button"  value="Добавить в базу"/>
+</div>
+<div >Желаеш своему спутнику жизни быть?(не доступно)
+    <textarea id="textField6" name="text6"></textarea>
+    <input onclick="" type="button"  value="Добавить в базу"/>
+</div>
+
+
+</body>
+</html>

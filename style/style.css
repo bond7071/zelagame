@@ -1,0 +1,117 @@
+html, body, #bodyw  {height:100%; width:100%;
+margin: 0px; padding: 0px;
+
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+}
+
+
+#backcong {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+     //  background-color: rgba(100, 41, 32, 0.53);
+    position: fixed;
+    text-align: center;
+      }
+
+#congratulation {
+      z-index: 10;
+      position: fixed;
+      background-color: #fefefe;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10%;
+}
+
+
+input, select, button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+body:-ms-fullscreen {height:100%; width:100%}
+
+
+
+#strength {background-color:pink; font-family: inherit;
+    font-size: inherit; }
+#stre2 {color:red;  float:right; font-family: inherit;
+    font-size: inherit; }
+#levelname {font-size:125%; }
+
+#kto {
+    font-size:150%;
+    color: #ffc25b;
+}
+
+#kto1 {color: pink;
+    font-size:200%;
+    font-family:verdana;}
+
+#result  {color: #ff57e0;
+    font-size:150%;
+    font-family:verdana;}
+
+#field0{background-size: cover;
+    margin: 0px; padding: 0px;
+    position:fixed;
+
+}
+#field1 {margin: 0px; padding: 0px;
+        width:100%;
+    height: 100%;
+      border-color:transparent;
+    border-spacing:0;
+    table-layout:fixed;
+}
+
+#mainzfield { vertical-align:top;
+    text-align:center;
+
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6, #b1, #b2, #b3, #b4, #b5, #b6,
+#c1, #c2, #c3, #c4, #c3, #c3, #c5, #c6, #d1, #d2, #d3, #d4, #d5, #d6,
+#e1, #e2, #e3, #e4, #e5, #e6 { display:none;
+    width:10%; margin: 0px;
+    padding: 0px;  }
+
+td:not(#mainzfield) { width:12%; height:16.5%;
+    vertical-align:middle;
+    text-align:center;
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+    margin: 0px;
+    padding: 0px;
+    border:1px solid transparent;
+ }
+
+#center { width:100%;
+    position: absolute;
+    top:50%;
+    text-align:center;
+    margin-top: 0px;
+}
+
+#zela {color: pink;
+    font-size:500%;
+    font-family:verdana;
+    text-align:center;
+    width:100%;
+    background:#FCF7EE
+;}
+#buttonsbr { text-align:center;
+    width:100%; font-size:130%; background:#FCF7EE}
+#beginz, .mbutton { text-align:center;
+    font-size:150%;}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+<textarea id="textField" name="text1"></textarea> <br/>
+<input onclick="updateFile(document.getElementById('textField'));" type="button" id="btn" value="Go"/>
+
+<script>
+
+    function getXMLHttpRequest()
+    {
+        if (window.XMLHttpRequest) {
+            return new XMLHttpRequest();
+        }
+
+        return new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    request = getXMLHttpRequest();
+
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            alert(request.responseText);
+        }
+    };
+
+    function updateFile(obj)
+    {
+        params = obj.name + '=' + obj.value;
+
+        request.open('POST', 'appenddb.php', true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.send(params);
+    }
+
+</script>
+
+</body>
+</html>

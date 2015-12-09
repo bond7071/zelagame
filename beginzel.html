@@ -1,0 +1,155 @@
+<!Doctype html>
+<head>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/getdata.js"></script>
+    <script src="js/fun.js"></script>
+
+
+    <link href='style/style.css' rel='stylesheet' type='text/css' >
+
+    <meta charset="utf8" />
+
+
+</head>
+
+
+
+<body >
+<div id="backcong"   >
+    <img  id='backcimg' src='png/babyball.png' style=" height:100%; " >
+
+<div id='congratulation'>
+
+    <div style="text-align: center" id="result">
+    </div>
+<div style="text-align: center" id="result1">
+</div>
+    <div style="text-align: center" id="result2">
+    </div>
+    <div style="text-align: center" id="result3">
+    </div>
+
+    <div id="lbutton" style="text-align:center"  >
+        <button id='beginlevel' onclick="nextbutton()">Продолжить</button>
+    </div>
+
+
+</div>
+    </div>
+
+<div id='headz'>
+    <div id='zela'>
+        Желание  </div>
+    <hr  style="border-color:red; margin:0px; padding:0px;">
+    <div style="margin:0px; padding:0px;">
+        <leftsz  id='strength' > &nbsp </leftsz> <rightsz id='stre2' >Ж-FORCE</rightsz>
+    </div>
+    <hr  style="border-color:red; margin:0px; padding:0px;">
+</div>
+
+<div id="field0" >
+<table id='field1'   >
+    <tr>
+        <td><img onmouseover="showz(this)" id='a1'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='a2'   src='png/babyball.png'>
+        </td>
+        <td id='mainzfield' rowspan=4 colspan=3  width=52% >
+            <div id='levelname' > </div>
+            <div id='begb'>
+                <button id='beginz' onclick=" launchFullscreen(document.documentElement), funczelag(), showslow()">ЖЕЛАТЬ</button>
+            </div>
+            <div id='kto'></div>
+            <div id='kto1'></div>
+
+        </td>
+        <td  ><img onmouseover="showz(this)" id='a3'   src='png/babyball.png'>
+        </td>
+        <td  ><img onmouseover="showz(this)" id='a4'   src='png/babyball.png'>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td ><img onmouseover="showz(this)" id='b1'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='b2'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='b3'   src='png/babyball.png'>
+        </td>
+        <td><img onmouseover="showz(this)" id='b4'   src='png/babyball.png'>
+        </td>
+    </tr>
+
+    <tr>
+        <td> <img onmouseover="showz(this)" id='c1'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='c2'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='c3'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='c4'   src='png/babyball.png'>
+        </td>
+    </tr>
+    <tr>
+        <td ><img onmouseover="showz(this)" id='d1'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='d2'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='d3'   src='png/babyball.png'>
+        </td>
+        <td ><img onmouseover="showz(this)" id='d4'   src='png/babyball.png'>
+        </td>
+    </tr>
+
+    <tr>
+        <td><img onmouseover="showz(this)" id='e1'   src='png/babyball.png'> </td>
+        <td ><img onmouseover="showz(this)" id='e2'   src='png/babyball.png'></td>
+
+        <td><img onmouseover="showz(this)" id='b5'   src='png/babyball.png'> </td>
+        <td ><img onmouseover="showz(this)" id='a5'   src='png/babyball.png'></td>
+
+        <td><img  onmouseover="showz(this)" id='a6'   src='png/babyball.png'></td>
+
+
+        <td><img  onmouseover="showz(this)" id='e3'   src='png/babyball.png'>  </td>
+        <td>
+            <img onmouseover="showz(this)" id='e4'   src='png/babyball.png'>
+        </td>
+    </tr>
+
+    <tr>
+        <td><img onmouseover="showz(this)" id='b6'   src='png/babyball.png'> </td>
+        <td ><img onmouseover="showz(this)" id='c5'   src='png/babyball.png'></td>
+
+        <td><img onmouseover="showz(this)" id='c6'   src='png/babyball.png'> </td>
+        <td ><img onmouseover="showz(this)" id='d5'   src='png/babyball.png'></td>
+
+        <td><img  onmouseover="showz(this)" id='d6'   src='png/babyball.png'></td>
+
+
+        <td><img  onmouseover="showz(this)" id='e5'   src='png/babyball.png'></td>
+
+        <td>
+            <img onmouseover="showz(this)" id='e6'   src='png/babyball.png'>
+        </td>
+    </tr>
+</table>
+
+
+<script>
+    //   var kto = document.createElement('kto');
+    // var kto1 = document.createElement('kto1');
+    //  var elementz = document.getElementById('mainzfield');
+    // elementz.appendChild(kto);
+    // elementz.appendChild(kto1);
+    // kto1.id='kto1';
+    // kto.id='kto';
+
+ </script>
+
+<script src="js/screen.js"></script>
+
+</body>
+
